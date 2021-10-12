@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="manifest" href="./manifest.json">
+    <title>PWA</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h1>PWA Testing <sup>r</sup></h1>
+        </nav>
+    </header>
+    <section>
+        <p>Testing progressive web application implementation to work as a web app and also as a mobile app with a support of an offline connectivity</p>
+    </section>
+    <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("./service-worker.js");
+        }
+    </script>
+</body>
+
+</html>
